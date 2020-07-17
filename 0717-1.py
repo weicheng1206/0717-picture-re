@@ -7,7 +7,7 @@ rows, cols, ch = img.shape
 
 # 设置标记点和目标点
 markpoint = [[210, 113], [688, 629], [16, 333], [460, 805]]
-dstpoint = [[0, 0], [352, 0], [0, 500], [352, 500]]
+dstpoint = [[ 0, 0], [352, 0], [0, 500], [352, 500]]
 
 # 强调标记点
 for i in markpoint:
@@ -26,3 +26,5 @@ dst = cv2.warpPerspective(img, M, (352, 500))
 plt.subplot(121), plt.imshow(img), plt.title('Input')
 plt.subplot(122), plt.imshow(dst), plt.title('Output')
 plt.show()
+
+
